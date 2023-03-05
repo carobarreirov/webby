@@ -602,12 +602,16 @@ class PeopleList extends HTMLElement {
     super();
 
     // attribute content 
-    const file = this.getAttribute('data');    
+    let file  = this.getAttribute('data');
+    let multi = this.getAttribute('multi');
+    multi = (multi == 'true')
 
     loadScript('assets/data/' + file).then(() => {
 
-        // start list
-        let html = '<ul>';
+        let html = '';
+
+        // if multiple lists, do not use <ul>
+        if (!multi) html = '<ul>';
 
         data.forEach((item,index) => {
 
@@ -624,7 +628,7 @@ class PeopleList extends HTMLElement {
         });
 
         // end list
-        html += '</ul>';
+        if (!multi) html += '</ul>';
 
         this.innerHTML = html;
     }); 

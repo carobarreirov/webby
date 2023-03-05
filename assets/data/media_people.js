@@ -1,16 +1,16 @@
 var data = [
     {
-        "name" : "Diana Santos",
+        "name" : "Pita Fita",
         "img"  : "assets/images/media/people/diana.jpg",
         "url"  : "https://www.mit.edu/"
     },
     {
-        "name" : "Susan Beltran",
+        "name" : "Lucia Bola",
         "img"  : "assets/images/media/people/maria.jpg",
         "url"  : "https://www.mit.edu/"
     },
     {
-        "name" : "Maria Garcia",
+        "name" : "Lulu Pared",
         "img"  : "assets/images/media/people/susan.jpg"
     }
 ];
